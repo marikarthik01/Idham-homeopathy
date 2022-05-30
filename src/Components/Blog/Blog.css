@@ -1,0 +1,47 @@
+.ttm-blog-classic .ttm-box-post-date {
+    height: 62px;
+    width: 69px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 18px;
+    padding-top: 13px;
+    padding-bottom: 7px;
+    z-index: 1;
+    color: var(--white-color);
+    text-align: center;
+    background-color: var(--skin-color);
+}
+article.ttm-blog-classic .ttm-box-post-date .entry-month {
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: capitalize;
+}
+article.ttm-blog-classic .ttm-box-post-date .entry-month span {
+    padding-left: 3px;
+}
+.ttm-post-prev-next-buttons {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+}
+.single .ttm-btn {
+    text-transform: capitalize;
+    padding: 11px 34px;
+    font-weight: 500;
+    color:white;
+    background-color: #009ea7;
+}
+.ttm-btn.ttm-btn-shape-round {
+    border-radius: 2rem;
+}
+a{
+    text-decoration: none;
+   
+}

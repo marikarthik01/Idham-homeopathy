@@ -1,0 +1,69 @@
+.layer-content {
+    position: relative;
+    z-index: 1;
+    height: 00px;
+    width: 100%;
+}
+.ttm-page-title-row{
+    width: 100%;
+    height: 300px;
+}
+.page-title-heading h1 {
+    font-size: 47px;
+    line-height: 50px;
+    font-weight: 700;
+    float: left;
+    color: white;
+    margin-left: -35px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+.breadcrumb-wrapper .container {
+    padding-right: 0;
+}
+.breadcrumb-wrapper .breadcrumb-wrapper-inner {
+    background-color: rgba(219,215,215,.17);
+    padding: 15px;
+    display: inline-block;
+}
+.breadcrumb-wrapper a, .breadcrumb-wrapper span {
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 19px;
+}
+.breadcrumb-wrapper a, .breadcrumb-wrapper span:hover{
+    color: #159EA0;
+    text-decoration: none;
+}
+.layer-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.page-content{
+    margin-top: 130px!important;
+}
+.title-box {
+    display: table;
+    width: 100%;
+}
+.breadcrumb-wrapper, .title-box .page-title-heading {
+    display: table-cell;
+    vertical-align: middle;
+}
+@media screen  and (max-width:420px) {
+    .page-title-heading h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    color: white;
+    margin-left: 5px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+}

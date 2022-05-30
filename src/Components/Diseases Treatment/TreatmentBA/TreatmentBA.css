@@ -1,0 +1,43 @@
+.ttm-btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: normal;
+    padding: 11px 25px 11px 31px;
+    background: 0 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeff5;
+    position: relative;
+    text-transform: capitalize;
+    font-family: var(--title-fonts);
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    background-color: #009ea7;
+    transition: all .5s ease 0s;
+}
+.ttm-btn.ttm-btn-shape-round {
+    border-radius: 2rem;
+}
+.ttm-btn.ttm-btn-size-sm {
+    font-size: 16px;
+    padding: 12px 26px;
+}
+.batitle{
+    font-weight: bold;
+}
+.ba-head{
+    margin-left: -35px;
+}
+.con-btnn{
+    margin-top: 40px;
+}
+.section-title h2.title {
+    font-family: 'Frank Ruhl Libre',serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 20px;
+}

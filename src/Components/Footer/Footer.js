@@ -21,7 +21,7 @@ function Footer() {
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h3>Location</h3>
+                                        <h3 className="foot-title">Location</h3>
                                         <span>Saradha College Road, Sixer Complex, <br/>Ground Floor, Near Bharath Petrol Bunk, Salem -7.</span>
                                     </div>
                                 </div>
@@ -37,7 +37,7 @@ function Footer() {
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h3>Office Hours</h3>
+                                        <h3 className="foot-title">Office Hours</h3>
                                         <span>10.30AM - 1.00PM. <br/>5.00PM - 8.00PM (Mon_Sat)</span>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@ function Footer() {
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h3>Mail Us</h3>
+                                        <h3 className="foot-title">Mail Us</h3>
                                         <span>info@idhamhomeoclinics.com</span>
                                     </div>
                                 </div>
@@ -86,34 +86,34 @@ function Footer() {
                                 <div class="social-icons social-hover">
                                     <ul class="list-inline social_icon">
                                         <li class="social-facebook">
-                                            <a target="_blank" href="#" rel="noopener" aria-label="facebook"><i class="fa fa-facebook"></i></a>
+                                            <a target="_blank" href="#" rel="noopener" aria-label="facebook"><i class="fa fa-facebook bottom-icon"></i></a>
                                         </li>
                                         <li class="social-twitter">
-                                            <a target="_blank" href="#" rel="noopener" aria-label="facebook"><i class="fa fa-twitter"></i></a>
+                                            <a target="_blank" href="#" rel="noopener" aria-label="facebook"><i class="fa fa-twitter bottom-icon"></i></a>
                                         </li>
                                         <li class="social-gplus">
-                                            <a target="_blank" href="#" rel="noopener" aria-label="facebook"><i class="fa fa-google-plus"></i></a>
+                                            <a target="_blank" href="#" rel="noopener" aria-label="facebook"><i class="fa fa-google-plus bottom-icon"></i></a>
                                         </li>
                                         <li class="social-linkedin"><a target="_blank" href="#" rel="noopener" aria-label="facebook">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            <i class="fa fa-linkedin bottom-icon" aria-hidden="true"></i></a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area link-area">
                             <div class="widget widget_nav_menu clearfix">
                                 <h3 class="widget-title ttm-textcolor-skincolor" id="links">Quick Links</h3>
                                 <ul>
-                                    <li><a href="contact-us.html">About Us</a></li>
-                                    <li><a href="contact-us.html">About Homeopathy</a></li>
-                                    <li><a href="services-1.html">Diseases & Treatment</a></li>
-                                    <li><a href="team-details.html">Services</a></li>
-                                    <li><a href="blog-grid.html">Contact Us</a></li>
+                                    <li className="quick-links"><a href="contact-us.html">About Us</a></li>
+                                    <li className="quick-links"><a href="contact-us.html">About Homeopathy</a></li>
+                                    <li className="quick-links"><a href="services-1.html">Diseases & Treatment</a></li>
+                                    <li className="quick-links"><a href="team-details.html">Services</a></li>
+                                    <li className="quick-links"><a href="blog-grid.html">Contact Us</a></li>
                                </ul>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area map-div" >
                             <div class="widget style2 widget-out-link clearfix">
 							 <h3 class="widget-title ttm-textcolor-skincolor " id="links">Location Map</h3>
                              <iframe
@@ -139,7 +139,7 @@ function Footer() {
         <div class="bottom-footer-text ttm-textcolor-white">
             <div class="container">
                 <div class="row copyright">
-                    <div class="col-md-12">
+                    <div class="col-md-12 footer-text">
                         <span>Copyright © 2022 Idham Homeopathy. All rights reserved.</span> Developed by <a href="https://www.aatheshsoft.com" class="ttm-textcolor-skincolor">Aatheshsoft</a>
                     </div>
                 </div>

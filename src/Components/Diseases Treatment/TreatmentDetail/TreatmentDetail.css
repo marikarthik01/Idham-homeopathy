@@ -1,0 +1,89 @@
+.sidebar .content-area {
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+.post-featured-wrapper, article.ttm-blog-classic {
+    position: relative;
+}
+article.ttm-blog-classic {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.single article.ttm-blog-classic .ttm-blog-classic-content {
+    padding: 0;
+}
+
+article.ttm-blog-classic .ttm-blog-classic-content {
+    padding: 24px 0 30px;
+}
+h4 {
+    font-size: 26px!important;
+    line-height: 46px;
+    font-weight: bold!important;
+}
+p {
+    margin: 0 0 15px;
+}
+.padding_bottom15 {
+    padding-bottom: 15px;
+}
+.comments-area .comment-respond {
+    padding-top: 10px;
+}
+.comment-reply-title {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+.comment-form {
+    margin-bottom: 20px;
+}
+.comment-form .comment-notes {
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.comment-form p:not(.comment-notes) {
+    margin-bottom: 20px;
+}
+.comment-form input[type=email], .comment-form input[type=text], .comment-form input[type=url], .comment-form textarea {
+    background-color: transparent;
+    border: 1px solid #efefef;
+    border-radius: 0;
+}
+.single .ttm-btn {
+    text-transform: capitalize;
+    padding: 11px 34px;
+    border: none;
+    font-weight: 500;
+}
+.comment-form textarea {
+    height: 125px;
+}
+.uneditable-input, input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    font-family: inherit;
+    -webkit-transition: border linear .2s,box-shadow linear .2s;
+    -moz-transition: border linear .2s,box-shadow linear .2s;
+    -o-transition: border linear .2s,box-shadow linear .2s;
+    transition: border linear .2s,box-shadow linear .2s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0;
+    vertical-align: middle;
+    width: 100%;
+    color: var(--dark-grey-color);
+    padding: 9px 15px;
+    font-weight: 400;
+    background-color: var(--white-color);
+    text-transform: inherit;
+    border: 1px solid var(--border-color);
+    font-size: 15px;
+    outline: 0;
+    line-height: inherit;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
