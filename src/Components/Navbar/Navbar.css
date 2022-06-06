@@ -143,24 +143,6 @@
     height: 80px;
     list-style: none;
     z-index: 1;
-    /* -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-    background-clip: padding-box;
-    transition: all .5s ease;
-    z-index: 99;
-    -webkit-transition: all .2s ease-out;
-    transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    -webkit-box-shadow: 0 4px 4px 1px rgb(0 0 0 / 20%);
-    box-shadow: 0 4px 4px 1px rgb(0 0 0 / 20%);
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-box-shadow: 0 3px 25px 0 rgb(43 52 59 / 10%), 0 0 0 rgb(43 52 59 / 10%) inset;
-    box-shadow: 0 3px 25px 0 rgb(43 52 59 / 10%), 0 0 0 rgb(43 52 59 / 10%) inset;
-    background-clip: padding-box; */
 }
 nav.main-menu ul {
     position: relative;
@@ -195,9 +177,15 @@ nav.main-menu ul {
         opacity: 1;
         padding: 10px;
         top: 100px;
+        
         display: block;
         transition: all 0.5s ease;
         z-index:1;
+    }
+    .nav-links{
+        font-family: 'Frank Ruhl Libre',serif;
+        font-size: 22px!important;
+        height: 102px;
     }
     .nav-icon{
         display: block;
@@ -223,7 +211,9 @@ nav.main-menu ul {
     }
 }
 @media screen  and (max-width:641px) {/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-
+   body{
+       overflow-x: hidden;
+   }
     .nav-menu{
         display:flex;
         flex-direction: column;
@@ -240,6 +230,7 @@ nav.main-menu ul {
         left:0px;
         padding: 10px;
         opacity: 1;
+        font-family: 'Frank Ruhl Libre',serif;
         top: 100px;
         display: block;
         transition: all 0.5s ease;
@@ -251,7 +242,7 @@ nav.main-menu ul {
     .nav-icon{
         display: block;
         font-size: 40px;
-        margin-left: -150px;
+        margin-left: -150px!important;
     }
     .top_bar{
         display: none;
@@ -292,6 +283,7 @@ nav.main-menu ul {
         background-color:#009EA7;
         left:0px;
         opacity: 1;
+        font-family: 'Frank Ruhl Libre',serif;
         display: block;
         top: 100px;
         padding: 10px;
@@ -319,7 +311,7 @@ nav.main-menu ul {
         color: black;
     }
  }
- @media screen  and (max-width:320px) {
+ @media screen  and (max-width:300px) {
     .nav-menu{
         display:flex;
         flex-direction: column;
@@ -335,6 +327,7 @@ nav.main-menu ul {
         background:#009EA7  ;
         left:0px;
         opacity: 1;
+        font-family: 'Frank Ruhl Libre',serif;
         display: block;
         padding: 10px;
         top: 100px;
@@ -346,8 +339,8 @@ nav.main-menu ul {
     }
     .nav-icon{
         display: block;
-        font-size: 50px;
-        margin-left: -400px;
+        font-size: 40px;
+        margin-left: 40px;
     }
     .top_bar{
         display: none;
@@ -377,6 +370,7 @@ nav.main-menu ul {
         background:#009EA7  ;
         left:0px;
         opacity: 1;
+        font-family: 'Frank Ruhl Libre',serif;
         display: block;
         padding: 10px;
         top: 100px;

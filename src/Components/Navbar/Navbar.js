@@ -11,7 +11,7 @@ function Navbar() {
     return (
 
         <>
-            <div class="top_bar ttm-bgcolor-skincolor clearfix">
+            <div class="top_bar ttm-bgcolor-skincolor clearfix ">
                 <div class="container">
                     <div class="row no-gutters">
                         <div class="col-md-12 d-flex flex-row align-items-center justify-content-center">
@@ -59,32 +59,32 @@ function Navbar() {
                     </div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <Link to="/" activeClassName="active" className="nav-links">Home</Link>
+                            <Link to="/" activeClassName="active" className="nav-links" onClick={handleClick}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/About" activeClassName="active" className="nav-links">About Us</Link>
+                            <Link to="/About" activeClassName="active" className="nav-links" onClick={handleClick}>About Us</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/AboutHomeo" activeClassName="active" className="nav-links">About Homeopathy</Link>
+                            <Link to="/AboutHomeo" activeClassName="active" className="nav-links" onClick={handleClick}>About Homeopathy</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <Link to="/DiseasesTreatment" activeClassName="active" className="nav-links">Diseases & Treatment</Link>
+                            <Link to="/DiseasesTreatment" activeClassName="active" className="nav-links" onClick={handleClick}>Diseases & Treatment</Link>
                             <div className="dropdown-content">
                                 <Link activeClassName="active" to="/BeforeAfter" >Treatment Before After</Link>
                             </div>
                         </li>
                         <li className="nav-item nav-drodown">
-                            <Link to="/BeforeAfter" activeClassName="active" className="nav-links">Treatment Before After</Link>
+                            <Link to="/BeforeAfter" activeClassName="active" className="nav-links" onClick={handleClick}>Treatment Before After</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/Services" activeClassName="active" className="nav-links">Services</Link>
+                            <Link to="/Services" activeClassName="active" className="nav-links" onClick={handleClick}>Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/Blog" activeClassName="active" className="nav-links">Blog</Link>
+                            <Link to="/Blog" activeClassName="active" className="nav-links" onClick={handleClick}>Blog</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/Contactus" activeClassName="active" className="nav-links">Contact Us</Link>
+                            <Link to="/Contactus" activeClassName="active" className="nav-links" onClick={handleClick}>Contact Us</Link>
                         </li>
                     </ul>
                 </div>

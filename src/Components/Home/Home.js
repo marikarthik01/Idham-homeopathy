@@ -1,5 +1,5 @@
-import React from 'react'
-import './Home.css' 
+import React, { useEffect, useState } from 'react'
+import './Home.css'
 import CountUp from 'react-countup';
 import Banner1 from '../Images/banner1.jpg';
 import Banner2 from '../Images/banner2.jpg';
@@ -15,9 +15,72 @@ import highbp from '../Images/high-bp.jpg';
 import testimonial from '../Images/testimonial.jpg';
 import idhamhomeologo from '../Images/idhamhomeo-logo.png';
 import team1 from '../Images/team1.jpg';
+import axios from "axios"
 
 
 function Home() {
+
+  const [banner, setBanner] = useState('');
+  const [name, setName] = useState('');
+  const [text, setText] = useState('');
+  const [postid, setPostId] = useState('');
+
+  // const data = { 
+  //   banner, 
+  //   name, 
+  //   text 
+  // };
+
+//   useEffect(() => {
+//     // POST request using fetch inside useEffect React hook
+//     const requestOptions = {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify(data)
+//     };
+//     console.log("hello");
+//     fetch('http://idhamhomeoclinics.com/idham/customerapp/banner.php{"keyword":"uHvKHZU1XEndoBn4/ImlPQVySl4vnihFTJl8g/jvN0k="}', requestOptions)
+//         .then(response => console.log(response.json()))
+//         .then(data => setPostId(data.id));
+
+// // empty dependency array means this effect will only run once (like componentDidMount in classes)
+// }, []);
+
+
+
+
+  useEffect(() => {
+
+    const data = { name: 'name', text: 'text' };
+
+    const requestOptions = {
+      method: 'POST',
+      mode:'cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    };
+
+    // fetch('http://idhamhomeoclinics.com/idham/customerapp/banner.php', requestOptions)
+    //     .then(response => {
+    //       console.log("Status: ", response.status);
+    //       console.log("Data: ", response.data);
+    //     }).catch(error => {
+    //       console.error('Something went wrong!', error);      
+    //     });
+    
+   
+
+    axios.post('http://idhamhomeoclinics.com/idham/customerapp/banner.php', requestOptions)
+      .then(response => {
+        console.log("Status: ", response.status);
+        console.log("Data: ", response.data);
+      }).catch(error => {
+        console.error('Something went wrong!', error);      
+      });
+
+  }, []);
+
+
   return (
     <>
       <div className="slider-div">
@@ -54,7 +117,7 @@ function Home() {
             <div class="col-lg-12">
               <div class="mt_90 res-991-mt-0">
                 <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="col-lg-4 col-md-12 col-sm-12 feature-div">
 
                     <div class="featured-icon-box icon-align-top-content box-shadow style1">
                       <div class="featured-icon">
@@ -354,7 +417,7 @@ function Home() {
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
-             
+
               <div class="ttm-fid inside ttm-fid-view-lefticon style1">
                 <div class="ttm-fid-icon-wrapper">
                   <i class="flaticon fa fa-id-card-o"></i>
@@ -369,21 +432,21 @@ function Home() {
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
-             
+
               <div class="ttm-fid inside ttm-fid-view-lefticon style1">
                 <div class="ttm-fid-icon-wrapper">
                   <i class="fa fa-heartbeat"></i>
                 </div>
                 <div class="ttm-fid-contents">
                   <h4 class="ttm-fid-inner">
-                 <b>  <span><CountUp end={820} /></span><span>+</span></b> 
+                    <b>  <span><CountUp end={820} /></span><span>+</span></b>
                   </h4>
                   <h3 class="ttm-fid-title">Project Complate</h3>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
-             
+
               <div class="ttm-fid inside ttm-fid-view-lefticon style1">
                 <div class="ttm-fid-icon-wrapper">
                   <i class="fa fa-comments-o"></i>
@@ -397,7 +460,7 @@ function Home() {
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
-             
+
               <div class="ttm-fid inside ttm-fid-view-lefticon style1">
                 <div class="ttm-fid-icon-wrapper">
                   <i class="fa fa-users"></i>
@@ -419,7 +482,7 @@ function Home() {
 
 
 
-     
+
 
 
       <section class="ttm-row team-section ttm-bgcolor-white clearfix">
@@ -434,13 +497,13 @@ function Home() {
               </div>
             </div>
           </div>
-          <div class="row slick_slider team dr-team " data-slick='{"slidesToShow":3, "slidesToScroll": 1, "arrows":false, "autoplay":false, "dots":true, "infinite":true, "responsive":[{"breakpoint":1199,"settings": {"slidesToShow": 3}}, {"breakpoint":992,"settings":{"slidesToShow": 2}},{"breakpoint":620,"settings":{"slidesToShow": 1}}]}'>
-            <div class="ttm-box-col-wrapper col-lg-4 col-md-4 col-sm-6">
+          <div class="row slick_slider team dr-team" id="dr-full-div" data-slick='{"slidesToShow":3, "slidesToScroll": 1, "arrows":false, "autoplay":false, "dots":true, "infinite":true, "responsive":[{"breakpoint":1199,"settings": {"slidesToShow": 3}}, {"breakpoint":992,"settings":{"slidesToShow": 2}},{"breakpoint":620,"settings":{"slidesToShow": 1}}]}'>
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-4 col-sm-6" id="dr-div">
               <div class="featured-imagebox featured-imagebox-team style1">
-                <div class="featured-thumbnail">
+                <div class="featured-thumbnail" id="dr-icon">
                   <img class="img-fluid" src={team1} width="370" height="380" alt="Doctor" />
                 </div>
-                <div class="featured-content featured-content-team">
+                <div class="featured-content featured-content-team" id="feature-content">
                   <div class="featured-iconbox ttm-media-link">
                     <div class="media-block">
                       <a href="doctordetail.html" rel="noopener" aria-label="team" class="media-btn"><i class="fa fa-plus"></i></a>
@@ -471,7 +534,7 @@ function Home() {
             </div>
 
 
-            <div class="ttm-box-col-wrapper col-lg-4 col-md-4 col-sm-6 dr-team">
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-4 col-sm-6 dr-team" id="dr-div2">
               <div class="featured-imagebox featured-imagebox-team style1">
                 <div class="featured-thumbnail">
                   <picture>
@@ -514,27 +577,27 @@ function Home() {
 
 
       <section class="ttm-row services-section bottom-home bg-img2 ttm-bg ttm-bgimage-yes clearfix">
-            <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
-            <div class="container">
-                <div class="row">
-                  <div class="col-lg-5 col-md-12">
-                  </div>
-                    <div class="col-lg-7 col-md-12">
-                        <div class="ttm-bgcolor-white spacing-1">
-                            
-                            <div class="text-center bottom-about">
-                                <a class="home-link" href="index.html" title="" rel="home">
-                                   <img class="img-center" src={idhamhomeologo} height="52" width="225" alt="logo-img"/>
-                                </a>
-                                <h3 class="fs-40 margin_top30">ABOUT HOMEOPATHY</h3>
-                                <p class="p-lr-40">We are proud to provide a state-of-the-art facility for the highest quality dental care available. We are happy to file insurance for your reimbursement as long partnership with various global partners.</p>
-                                <a class="ttm-btnn ttm-btn-size-md ttm-btn-shape-round ttm-btn-style-fill ttm-btn-color-skincolor margin_top15" href="abouthomeo.html">know more!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-12">
             </div>
-        </section>
+            <div class="col-lg-7 col-md-12">
+              <div class="ttm-bgcolor-white spacing-1">
+
+                <div class="text-center bottom-about">
+                  <a class="home-link" href="index.html" title="" rel="home">
+                    <img class="img-center" src={idhamhomeologo} height="52" width="225" alt="logo-img" />
+                  </a>
+                  <h3 class="fs-40 margin_top30">ABOUT HOMEOPATHY</h3>
+                  <p class="p-lr-40">We are proud to provide a state-of-the-art facility for the highest quality dental care available. We are happy to file insurance for your reimbursement as long partnership with various global partners.</p>
+                  <a class="ttm-btnn ttm-btn-size-md ttm-btn-shape-round ttm-btn-style-fill ttm-btn-color-skincolor margin_top15" href="abouthomeo.html">know more!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </>
   )
